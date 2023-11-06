@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="model">
+            <form class="form">
+                <div class="info-form">
+                    <div class="input_container">
+                        <label class="input_label" for="info_field">Card holder full name</label>
+                        <input type="text" class="input_field" id="info_field" name="input-name" title="Inpit title" placeholder="Enter your full name">
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label" for="info_field">Card Number</label>
+                        <input type="number" class="input_field" id="info_field" name="input-name" title="Inpit title" placeholder="0000 0000 0000">
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label" for="info_field">Expiry Date / CVV</label>
+                        <div class="split">
+                            <input type="text" class="input_field" id="info_field" name="input-name" title="Expiry Date" placeholder="01/01/23">
+                            <input type="number" class="input_field" id="info_field" name="cvv" title="CVV" placeholder="CVV">
+                        </div>
+                    </div>
+                </div>
+                <button class="checkout-btn">Checkout</button>
+                <div class="separator">
+                    <hr class="line">
+                    <p>Pay using credit card</p>
+                    <hr class="line">
+                </div>
+                <div class="payment-options">
+                    <button name="paypal" type="button">
+                        <img src="png/paypal.png" alt="">
+                    </button>
+                    <button name="apple-pay" type="button">
+                        <img src="png/apple.png" alt="">
+                    </button>
+                    <button name="google-pay" type="button">
+                        <img src="png/google.png" alt="">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
